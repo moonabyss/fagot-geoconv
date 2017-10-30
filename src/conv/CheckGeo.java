@@ -57,6 +57,7 @@ public class CheckGeo {
             String b15 = String.format("%02X", (flat)>>8 & 0xFF);
             String b16 = String.format("%02X", (flat)>>16 & 0xFF);
             String b17 = String.format("%02X", (flat)>>24 & 0xFF);
+
             System.out.println("\r\nHeader "+fileName);
             System.out.println("00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 10 11");
             System.out.printf("%s %s 80 00 10 00 %s %s %s %s %s %s %s %s %s %s %s %s",b1,b2,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17);
